@@ -18,3 +18,5 @@ Run the script in **R** to generate and save the team data. Modify the save form
 ## Saving Options
 
 - `write.csv(team, "team_info.csv", row.names = FALSE)` – Save as CSV
+  
+- Watch my video :  https://www.linkedin.com/posts/braaelwaleed_hackbio-biocoding-rprogramming-activity-7293963764800851968-2p3k?utm_source=share&utm_medium=member_desktop&rcm=ACoAACi2XjYBm_CCcc-Qlc9MadaU3EDlW5k3IaE
