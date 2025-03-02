@@ -1,0 +1,43 @@
+Report on Protein Mutations Analysis Using SIFT and FoldX Scores
+
+Introduction
+
+This study analyzes the impact of protein mutations using SIFT and FoldX scores. SIFT predicts functional effects, with scores below 0.05 indicating deleterious mutations, while FoldX assesses structural stability, where scores above 2 kcal/mol suggest significant impact. The goal is to identify mutations affecting function and structure and analyze the most frequent amino acid changes.
+
+Methods
+
+• Data Acquisition & Preprocessing: SIFT and FoldX datasets were imported, cleaned, and merged based on protein and amino acid substitutions.
+
+• Filtering Mutations: Mutations with SIFT < 0.05 and FoldX > 2 were selected.
+
+• Amino Acid Frequency Analysis: The first amino acid in each mutation was extracted, and its frequency was calculated.
+
+• Visualization: A bar plot and pie chart were generated using ggplot2.
+
+• Saving Results: Filtered data and visualizations were saved for further analysis.
+
+Results
+
+• Identified mutations significantly impacting protein function and structure.
+
+• Highlighted amino acids frequently involved in deleterious mutations.
+
+• Visualizations revealed mutation distribution patterns.
+
+Conclusion
+
+This analysis provides insights into mutation hotspots affecting protein stability and function. Findings can guide further research in genetic disorders, drug development, and protein engineering.
+
+Future Work
+
+• Investigate mutation-disease associations.
+
+• Expand datasets for broader analysis.
+
+• Model structural changes caused by mutations.
+
+References
+
+• SIFT: https\://sift.bii.a-star.edu.sg/
+
+• FoldX: http\://foldxsuite.crg.eu/
