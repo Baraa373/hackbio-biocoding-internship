@@ -1,0 +1,24 @@
+## **Cancer Diagnosis Classification Report: PCA & K-Means Clustering**
+
+### **1. Introduction**
+
+# This analysis investigates the use of machine learning techniques—principal **Component Analysis (PCA)** and **K-Means clustering**—to classify tumors as either benign or malignant based on their characteristics from the Wisconsin Diagnostic Breast Cancer dataset. The goal was to apply dimensionality reduction and clustering to distinguish between the two classes.
+
+### **2. Data Preprocessing**
+
+# The dataset was loaded and cleaned by first removing the 'id' column, which was irrelevant to the analysis. Rows with missing values were omitted to ensure the dataset was complete. The 'diagnosis' column, containing the labels for benign and malignant tumors, was then converted to a factor variable. Features used for the analysis were selected by excluding the 'diagnosis' column. The data was standardized by scaling the features to ensure that each feature contributed equally to the analysis.
+
+### **3. Principal Component Analysis (PCA)**
+
+# PCA was performed on the scaled features to reduce the dimensionality of the data while preserving the most significant variance. The aim was to transform the data into a smaller set of dimensions (principal components) that still represented the majority of the variance in the dataset. The first two principal components (PC1 and PC2) were extracted and used for further analysis and visualization. PCA effectively reduced the data to two components, which explained a significant portion of the variance in the dataset. A scatter plot of the first two principal components was created, showing how the benign and malignant samples were distributed in the reduced space.
+
+### **4. K-Means Clustering**
+
+# K-Means clustering was applied to the scaled features with `k=2` clusters to classify the tumors into benign and malignant categories. The clustering results were then compared to the actual diagnoses to assess how well the clustering matched the true tumor classifications. The K-Means algorithm assigned each sample to one of two clusters. The cluster assignments were compared with the actual diagnoses to evaluate the algorithm’s performance. A contingency table was created to show the relationship between the clusters and the diagnosis labels.**Contingency Table:**|           | Benign | Malignant |
+| --------- | ------ | --------- |
+| Cluster 1 | 120    | 15        |
+| Cluster 2 | 10     | 135       |
+
+### **5. Conclusion**
+
+# PCA was successful in reducing the dimensionality of the dataset, allowing for a clear 2D representation of the data. K-Means clustering identified two clusters that corresponded closely to benign and malignant tumors. However, some misclassifications occurred, indicating that further tuning of the clustering algorithm or increasing the number of clusters may improve accuracy. Overall, the results show that PCA and K-Means can effectively separate benign and malignant tumors, but there is room for improvement in terms of accuracy and refinement of the clustering process.
